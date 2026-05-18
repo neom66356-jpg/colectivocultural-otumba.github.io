@@ -1,0 +1,28 @@
+/* Estilos básicos para Colectivo Cultural Otumba */
+:root{
+  --bg:#ffffff;
+  --text:#222;
+  --accent:#7b3f98;
+  --muted:#666;
+}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.6;color:var(--text);background:var(--bg);margin:0}
+.container{max-width:960px;margin:0 auto;padding:1rem}
+.site-header{background:linear-gradient(90deg,var(--accent),#5b2d7a);color:#fff}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:1rem}
+.site-title{margin:0;font-size:1.25rem}
+.nav a{color:#fff;text-decoration:none;margin-left:1rem}
+.hero{padding:2rem 0;text-align:center}
+.hero h2{font-size:2rem;margin:0 0 .5rem}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:.6rem 1rem;border-radius:6px;text-decoration:none}
+.intro, .latest, .about, .posts, .contact{margin:2rem 0}
+.posts .post-summary{border-bottom:1px solid #eee;padding:1rem 0}
+.posts .post-summary h3{margin:.2rem 0}
+.meta{color:var(--muted);font-size:.9rem}
+.site-footer{background:#f6f6f6;padding:1rem 0;margin-top:2rem}
+.form-status{margin-top:.5rem;color:var(--muted)}
+input[type="text"],input[type="email"],textarea{width:100%;padding:.6rem;border:1px solid #ddd;border-radius:6px;margin-top:.25rem;margin-bottom:.75rem}
+@media (max-width:600px){
+  .site-header .container{flex-direction:column;align-items:flex-start}
+  .nav a{margin:0 .5rem .5rem 0}
+}

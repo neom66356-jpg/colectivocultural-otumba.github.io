@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contacto — Colectivo Cultural Otumba</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Colectivo Cultural Otumba</h1>
+      <nav class="nav">
+        <a href="/index.html">Inicio</a>
+        <a href="/blog.html">Artículos</a>
+        <a href="/about.html">Acerca de</a>
+        <a href="/contact.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="contact">
+      <h2>Contacto</h2>
+      <p>Envía tus dudas, propuestas o materiales. Usaremos esta información para comunicarnos con quien corresponda.</p>
+
+      <form id="contactForm" novalidate>
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" required minlength="2">
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="6" required minlength="10"></textarea>
+
+        <button type="submit" class="btn">Enviar</button>
+        <p id="formStatus" class="form-status" aria-live="polite"></p>
+      </form>
+
+      <p class="note">Nota: Este formulario es un ejemplo; para recibir mensajes en un correo real, integra un servicio como Formspree o Netlify Forms.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Colectivo Cultural Otumba</p>
+    </div>
+  </footer>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
